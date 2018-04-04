@@ -53,7 +53,7 @@
 Distribution = "webos"
 
 # Supported MACHINE-s
-Machines = ['raspberrypi3']
+Machines = ['wandboard']
 
 # github.com/openembedded repositories are read-only mirrors of the authoritative
 # repositories on git.openembedded.org
@@ -70,12 +70,13 @@ webos_layers = [
 
 ('meta-qt5',                  20, 'git://github.com/meta-qt5/meta-qt5.git',                 'branch=krogoth,commit=f8584d7', ''),
 
-('meta-webos-backports-2.3',  30, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-('meta-webos-backports-2.4',  31, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-('meta-webos-backports-2.5',  32, 'git://github.com/webosose/meta-webosose.git',            '', ''),
+('meta-webos-backports-2.3',  30, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
+('meta-webos-backports-2.4',  31, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
+('meta-webos-backports-2.5',  32, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
 
-('meta-webos',                40, 'git://github.com/webosose/meta-webosose.git',            'branch=master,commit=7c8e550', ''),
+('meta-webos',                40, 'git://github.com/jb-seo/meta-webosose.git',              'branch=wandboard,commit=09ca31c', ''),
 
-('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi',            'branch=morty,commit=2a19226', ''),
-('meta-webos-raspberrypi',    51, 'git://github.com/webosose/meta-webosose.git',            '', ''),
+('meta-freescale',            50, 'git://git.yoctoproject.org/meta-freescale',              'branch=morty,commit=ab03682', ''),
+('meta-freescale-3rdparty',   51, 'https://github.com/Freescale/meta-freescale-3rdparty',   'branch=morty,commit=e55167c', ''),
+('meta-webos-freescale',      52, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
 ]
