@@ -13,7 +13,7 @@ Cloning
 =======
 Set up build-webos by cloning its Git repository:
 
-     git clone https://github.com/webosose/build-webos.git
+     git clone -b wandboard https://github.com/jb-seo/build-webos.git
 
 Note: If you populate it by downloading an archive (zip or tar.gz file), then you will get the following error when you run mcf:
 
@@ -34,9 +34,14 @@ Building
 ========
 To configure the build for the raspberrypi3 and to fetch the sources:
 
-    $ ./mcf -p 0 -b 0 raspberrypi3
+    $ ./mcf -p 0 -b 0 wandboard
 
 The `-p 0` and `-b 0` options set the make and bitbake parallelism values to the number of CPU cores found on your computer.
+
+To use wandboard's gpu library (imx-gpu-viv), you need to accept EULA.
+Please read 'meta-freescale/EULA' and add ACCEPT_FSL_EULA = "1" to local.conf if you accept.
+
+    $ echo 'ACCEPT_FSL_EULA = "1"' >> conf/local.conf
 
 To kick off a full build of webOS OSE, make sure you have at least 100GB of disk space available and enter the following:
 
