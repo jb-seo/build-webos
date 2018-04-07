@@ -74,7 +74,7 @@ webos_layers = [
 ('meta-webos-backports-2.4',  31, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
 ('meta-webos-backports-2.5',  32, 'git://github.com/jb-seo/meta-webosose.git',              '', ''),
 
-('meta-webos',                40, 'git://github.com/jb-seo/meta-webosose.git',              'branch=wandboard,commit=09ca31c', ''),
+('meta-webos',                40, 'git://github.com/jb-seo/meta-webosose.git',              'branch=wandboard,commit=c9f25af', ''),
 
 ('meta-freescale',            50, 'git://git.yoctoproject.org/meta-freescale',              'branch=morty,commit=ab03682', ''),
 ('meta-freescale-3rdparty',   51, 'https://github.com/Freescale/meta-freescale-3rdparty',   'branch=morty,commit=e55167c', ''),
